@@ -1,22 +1,38 @@
 {
     "format_version": 1,
-    "tooth": "<tooth repository path without http:// or https://>",
-    "version": "<version>",
-    "dependencies": {},
+    "tooth": "github.com/Tooth-Hub/BDSDownloader",
+    "version": "0.1.0",
     "information": {
-        "name": "<name>",
-        "description": "<description>",
-        "author": "<author>",
-        "license": "<license>",
-        "homepage": "<homepage>"
+        "name": "BDS Donwloader",
+        "description": "A CLI tool to download BDS",
+        "author": "Jasonzyt",
+        "license": "MIT",
+        "homepage": "https://github.com/Jasonzyt/BDSDownloader"
     },
     "placement": [
         {
-            "source": "<source>",
-            "destination": "<destination>"
+            "source": "linux/amd64/bdsdown",
+            "destination": ".lip/tools/bdsdown/bdsdown",
+            "GOOS": "linux",
+            "GOARCH": "amd64"
+        },
+        {
+            "source": "linux/arm64/bdsdown",
+            "destination": ".lip/tools/bdsdown/bdsdown",
+            "GOOS": "linux",
+            "GOARCH": "arm64"
+        },
+        {
+            "source": "windows/amd64/bdsdown.exe",
+            "destination": ".lip/tools/bdsdown/bdsdown.exe",
+            "GOOS": "windows",
+            "GOARCH": "amd64"
+        },
+        {
+            "source": "windows/arm64/bdsdown.exe",
+            "destination": ".lip/tools/bdsdown/bdsdown.exe",
+            "GOOS": "windows",
+            "GOARCH": "arm64"
         }
-    ],
-    "possession": [
-        "<possession>"
     ]
 }
