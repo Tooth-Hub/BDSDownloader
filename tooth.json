@@ -1,7 +1,7 @@
 {
     "format_version": 1,
     "tooth": "github.com/Tooth-Hub/BDSDownloader",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "information": {
         "name": "BDS Donwloader",
         "description": "A CLI tool to download BDS",
